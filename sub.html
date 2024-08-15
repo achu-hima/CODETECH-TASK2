@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="recipe.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+   <br><br>
+    <!-- Front Page Section -->
+    <section id="front-page">
+        <div class="item">
+<h1>"A recipe has no soul. You, as the cook, must bring soul to the recipe."</h1></div>
+        <br> <br> 
+        <button id="goto-add-recipe">Add a New Recipe</button>
+        <button id="goto-recipe-list">View Recipes</button>
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="C:\HIMA\task_2\b01.jpg" class="img-fluid" alt="Image 1"><br>
+                            <h2>Breakfast Recipes</h2>
+                        </div>
+                    </div><br><br>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="C:\HIMA\task_2\b02.jpg" class="img-fluid" alt="Image 2"><br>
+                            <h2>Lunch Recipes</h2>
+                        </div>
+                    </div><br><br>
+                    <div class="col-md-4">
+                        <div class="gallery-item">
+                            <img src="C:\HIMA\task_2\b03.jpg" class="img-fluid" alt="Image 3"><br>
+                            <h2>Dinner Recipes</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                     </section>
+
+ 
+
+    <!-- Add Recipe Section -->
+    <section id="add-recipe" class="hidden">
+        <br> <br>
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+            <button type="submit">Add Recipe</button>
+        </form>
+        <button id="back-to-front-page">Back to Home</button>
+    </section>
+
+    <!-- Recipe List Section -->
+    <section id="recipe-list" class="hidden">
+        <h3>Recipe List</h3>
+        <input type="text" id="search" placeholder="Search recipes...">
+        <select id="category-filter">
+            <option value="all">All</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Desserts">Desserts</option>
+        </select>
+        <ul id="recipes"></ul>
+        <button id="back-to-front-page-2">Back to Home</button>
+    </section>
+
+    <!-- Recipe Details Section -->
+    <section id="recipe-details">
+        <h2>Recipe Details</h2>
+        <div id="details"></div>
+  
+        <button id="back-to-recipe-list">Back to Recipe List</button>
+    </section>
+
+    <script src="scrp.js"></script> <!-- Link to your external JS file -->
+</body>
+</html>
